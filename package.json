@@ -1,6 +1,6 @@
 {
   "name": "@pajama-studio/prefab-studio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Domain-agnostic prefab editor for the Pajama Studio prefab framework: a headless editing core (ops, selection, undo/redo, store persistence) with React bindings. Bring your own viewport; domain packs contribute inspectors.",
   "license": "MIT",
   "type": "module",
@@ -21,16 +21,16 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@pajama-studio/prefab-core": "^0.3.0"
+    "@pajama-studio/prefab-core": "^0.3.2"
   },
   "peerDependencies": {
     "react": ">=18"
   },
   "devDependencies": {
-    "typescript": "^5.6.0",
-    "vitest": "^3.0.0",
+    "@types/react": "^19.0.0",
     "react": "^19.0.0",
-    "@types/react": "^19.0.0"
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
   },
   "repository": {
     "type": "git",
