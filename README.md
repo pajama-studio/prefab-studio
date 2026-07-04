@@ -9,8 +9,9 @@ Domain-agnostic prefab **editing** for the Pajama Studio prefab framework.
 - `createEditorState` / `applyOp` / `undo` / `redo` — a pure reducer with a
   bounded history; selection changes never pollute undo.
 - `usePrefabEditor(prefab, { store })` — React bindings with revision
-  tracking and debounced autosave into any `PrefabStore`
-  (memory, localStorage, or `@pajama-studio/prefab-store`'s REST/D1 cloud).
+  tracking and debounced autosave into any `PrefabStore`. The hook edits one
+  root prefab today; package-aware stores wrap that root into a
+  `PrefabPackage` so the same backend can later preserve nested dependencies.
 
 Bring your own viewport: a gizmo emits `setTransform`, an outliner emits
 `select`, an inspector emits `setComponentField` — the core doesn't care
