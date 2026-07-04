@@ -6,13 +6,38 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
-  "files": ["dist", "README.md"],
-  "scripts": { "build": "tsc -p tsconfig.build.json", "test": "vitest run" },
-  "dependencies": { "@pajama-studio/prefab-kit": "^0.4.1" },
-  "peerDependencies": { "react": ">=18" },
-  "devDependencies": { "typescript": "^5.6.0", "vitest": "^3.0.0", "react": "^19.0.0" },
-  "repository": { "type": "git", "url": "git+https://github.com/pajama-studio/prefab-studio.git" },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@pajama-studio/prefab-kit": "^0.4.1"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0",
+    "react": "^19.0.0",
+    "@types/react": "^19.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pajama-studio/prefab-studio.git"
+  },
   "homepage": "https://github.com/pajama-studio/prefab-studio#readme",
-  "publishConfig": { "access": "public" }
+  "publishConfig": {
+    "access": "public"
+  }
 }
