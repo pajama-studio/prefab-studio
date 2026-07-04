@@ -1,4 +1,4 @@
-import type { CoreComponents, KitPrefab, KitEntity, Transform } from "@pajama-studio/prefab-kit";
+import type { CoreComponents, KitPrefab, KitEntity, Transform } from "@pajama-studio/prefab-core/schema";
 
 /** Domain-erased prefab/entity (any component vocabulary). */
 export type AnyPrefab = KitPrefab<CoreComponents<never>>;

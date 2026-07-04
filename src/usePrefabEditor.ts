@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { PrefabStore } from "@pajama-studio/prefab-kit";
+import type { PrefabStore } from "@pajama-studio/prefab-core/schema";
 import {
   applyOp, createEditorState, redo as redoOp, undo as undoOp,
   type AnyPrefab, type EditorOp, type EditorState,
